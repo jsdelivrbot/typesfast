@@ -8,8 +8,10 @@ var sampleText = [
 ];
 var story = 0;
 var index = 0;
+var m = 1;
 $("body").keydown(function(e){
-    
+    var k = m;
+    for (var i=0;i<=k;i++) {
          var text = sampleText[story][index];
          $("body").append(text);
          index++;
@@ -20,4 +22,5 @@ $("body").keydown(function(e){
          if (story>sampleText.length) {
              story=0;    
          }
+    }
 });
