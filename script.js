@@ -10,17 +10,18 @@ var story = 0;
 var index = 0;
 var m = 1;
 $("body").keydown(function(e){
-    var k = m;
-    for (var i=0;i<=k;i++) {
-         var text = sampleText[story][index];
-         $("body").append(text);
-         index++;
-         if (index>sampleText[story].length) {
-             story++;
-             index=0;
-         }
-         if (story>sampleText.length) {
-             story=0;    
-         }
+    var k = 0;
+    while (k<m) {
+        var text = sampleText[story][index];
+        $("body").append(text);
+        index++;
+        if (index>sampleText[story].length) {
+            story++;
+            index=0;
+        }
+        if (story>sampleText.length) {
+            story=0;    
+        }
+        k++;
     }
 });
