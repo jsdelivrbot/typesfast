@@ -9,14 +9,15 @@ var sampleText = [
 var story = 0;
 var index = 0;
 $("body").keydown(function(e){
-    var text = sampleText[story][index];
-    $("body").append(text);
-    index++;
-    if (index>sampleText[story].length) {
-        story++;
-        index=0;
-    }
-    if (story>sampleText.length) {
-        story=0;    
-    }
+    
+         var text = sampleText[story][index];
+         $("body").append(text);
+         index++;
+         if (index>sampleText[story].length) {
+             story++;
+             index=0;
+         }
+         if (story>sampleText.length) {
+             story=0;    
+         }
 });
