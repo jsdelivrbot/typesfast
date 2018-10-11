@@ -8,7 +8,7 @@
 // ];
 var story = 0;
 var index = 0;
-var savedTexts = ["aaa","bbb","ccc",];
+var savedTexts = [generatePhrase(),generatePhrase(),generatePhrase(),];
 {
     //nouns:
     {var noun = [
