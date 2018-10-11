@@ -203,7 +203,7 @@ $("body").keydown(function(e){
         $("body").append(text);
         index++;
         if (index>savedTexts[story].length) {
-            savedTexts[story]=generatePhrase();
+            savedTexts[story]=generatePhrase()+" ";
             story++;
             index=0;
         }
