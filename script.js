@@ -8,7 +8,6 @@
 // ];
 var story = 0;
 var index = 0;
-var savedTexts = [generatePhrase(),generatePhrase(),generatePhrase(),];
 {
     //nouns:
     {var noun = [
@@ -195,6 +194,7 @@ function generatePhrase() {
     }
     return genMessage;
 }
+var savedTexts = [generatePhrase()+' ',generatePhrase()+' ',generatePhrase()+' '];
 var m = 1;
 $("body").keydown(function(e){
     var k = 0;
@@ -203,7 +203,7 @@ $("body").keydown(function(e){
         $("body").append(text);
         index++;
         if (index>savedTexts[story].length) {
-            savedTexts[story]=generatePhrase()+" ";
+            savedTexts[story]=generatePhrase()+' ';
             story++;
             index=0;
         }
