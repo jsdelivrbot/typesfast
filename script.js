@@ -120,11 +120,11 @@ function generateSubject() {
             
         }
         if (rand(3)<2||xSub===true) {
-            gArticle = "The";
+            gArticle = "the";
         } else if (an) {
-            gArticle = "An";
+            gArticle = "an";
         } else {
-            gArticle = "A";
+            gArticle = "a";
         }
         var chanceOfAdj = 50;
         var continueAdj = 1;
@@ -136,18 +136,18 @@ function generateSubject() {
                 chanceOfAdj = chanceOfAdj/2;
             } else {
                 if (gAdjList.length>2) {
-                    if ((gArticle==="A"||gArticle==="An")&&(gAdjList[0].startsWith("a")||gAdjList[0].startsWith("e")||gAdjList[0].startsWith("i")||gAdjList[0].startsWith("o")||gAdjList[0].startsWith("u"))) {
-                        gArticle = "An";
+                    if ((gArticle==="a"||gArticle==="an")&&(gAdjList[0].startsWith("a")||gAdjList[0].startsWith("e")||gAdjList[0].startsWith("i")||gAdjList[0].startsWith("o")||gAdjList[0].startsWith("u"))) {
+                        gArticle = "an";
                     } else {
-                        gArticle = "A";    
+                        gArticle = "a";    
                     }
                     var gAdjListPop = gAdjList.pop();
                     formattedAdj = " " + gAdjList.toString() + ",and " + gAdjListPop;
                 } else if (gAdjList.length>1) {
-                    if ((gArticle==="A"||gArticle==="An")&&(gAdjList[0].startsWith("a")||gAdjList[0].startsWith("e")||gAdjList[0].startsWith("i")||gAdjList[0].startsWith("o")||gAdjList[0].startsWith("u"))) {
-                        gArticle = "An";
+                    if ((gArticle==="a"||gArticle==="an")&&(gAdjList[0].startsWith("a")||gAdjList[0].startsWith("e")||gAdjList[0].startsWith("i")||gAdjList[0].startsWith("o")||gAdjList[0].startsWith("u"))) {
+                        gArticle = "an";
                     } else {
-                        gArticle = "A";    
+                        gArticle = "a";    
                     }
                     var gAdjListPop = gAdjList.pop();
                     formattedAdj = " " + gAdjList.toString() + " and " + gAdjListPop;
